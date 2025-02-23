@@ -9,19 +9,22 @@ This is a full-stack Task Management System that allows users to create, update,
 - Reorder tasks within a category.
 - Changes are saved instantly to MongoDB.
 
+## Live Link
+
+https://task-manager-client-5c6b6.web.app
+
 ## Technologies Used
 ### Frontend:
 - React.js
 - React DnD (for drag-and-drop functionality)
 - Tailwind CSS (for styling)
 - Firebase (for authentication)
-- Socket.io (for real-time updates)
+
 
 ### Backend:
 - Node.js
 - Express.js
 - MongoDB Atlas (Database)
-- Socket.io (for real-time updates)
 
 ## Installation
 ### Prerequisites:
@@ -51,9 +54,8 @@ For backend:
 Create a `.env` file in the server directory and add:
 ```env
 PORT=5000
-DB_USER=your-mongodb-username
-DB_PASS=your-mongodb-password
-JWT_SECRET=your-jwt-secret
+DB_USER=taskUser
+DB_PASS=dSvDH7uLqwaRQR5R
 ```
 
 #### 4. Start the server:

@@ -24,7 +24,7 @@ const AddTask = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/tasks", {
+      const response = await fetch("https://task-manager-server-two-iota.vercel.app/tasks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newTask),

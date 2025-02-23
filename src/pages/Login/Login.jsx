@@ -17,7 +17,7 @@ const Login = () => {
 
       const { uid, email, displayName } = result.user;
 
-      const response = await fetch("http://localhost:5000/users", {
+      const response = await fetch("https://task-manager-server-two-iota.vercel.app/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId: uid, email, displayName }),
@@ -75,7 +75,7 @@ const Login = () => {
           const { uid, email, displayName } = result.user;
   
           // Save user data to the database
-          const response = await fetch("http://localhost:5000/users", {
+          const response = await fetch("https://task-manager-server-two-iota.vercel.app/users", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

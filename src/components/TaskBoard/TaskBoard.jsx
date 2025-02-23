@@ -12,7 +12,7 @@ const TaskBoard = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await fetch("http://localhost:5000/tasks");
+        const response = await fetch("https://task-manager-server-two-iota.vercel.app/tasks");
         const data = await response.json();
         setTasks(data);
       } catch (error) {
@@ -26,7 +26,7 @@ const TaskBoard = () => {
   // Function to update task category in the database
   const updateTaskCategory = async (taskId, newCategory) => {
     try {
-      const response = await fetch(`http://localhost:5000/tasks/${taskId}`, {
+      const response = await fetch(`https://task-manager-server-two-iota.vercel.app/tasks/${taskId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
